@@ -85,7 +85,7 @@ void Widget::slot_ShowRowCol(int row, int col)
 
 void pShell()
 {
-    FILE *pShell = popen("df -h | awk -F' ' '{print $6}' | sed s/[[:space:]]//g", "r");
+    FILE *pShell = popen("df -h | awk -F' ' '{print $1}' | sed s/[[:space:]]//g|tail -n +4", "r");
     int nSize = 100;
     char *pBuf = (char *)malloc(nSize);
     memset(pBuf, 0 ,nSize);
