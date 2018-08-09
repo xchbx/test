@@ -1,4 +1,4 @@
-#include "mythread.h"
+﻿#include "mythread.h"
 #include <QThread>
 #include <QDebug>
 #include <QMessageBox>
