@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\AudioPCM2ES.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\dra\DraES2PCM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\dra\libdra\xdra_decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\dra\libdra\xdra_fft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\dra\libdra\xdra_freq_band.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\dra\libdra\xdra_huffman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\dra\libdra\xdra_mdct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\dra\libdra\xdra_qstep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\dra\libdra\xdra_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\dra\libdra\xdra_win_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\ffmpeg\FFMPEGES2PCM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="channel\Channel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="channel\ChannelManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="channel\ChannelStruct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config\SysConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="monitor\alg_blackframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="monitor\alg_colorbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="monitor\alg_snd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="monitor\Monitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="osd\OSDCompositionStr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\PlatformInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\BHXml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\FileEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\Markup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\NetcardInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\OSMutex_Linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\OSMutex_Win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\OSSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\OSTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\RingBuf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\Semaphore_Linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\Semaphore_Win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\SharedMemory_Linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\SharedMemory_Win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\Thread_Linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\Thread_Win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\UdpX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\ZThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\http\HttpStation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\http\XMLParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stream\StreamReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stream\StreamWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stream\UDPRecv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stream\UDPSend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ts\AVCDemuxer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ts\EncoderTS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ts\ESParse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ts\TSParseCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\VideoYUV2ES.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\AVSES2YUV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_decoder_aec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_decoder_vlc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_dsp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mc_mmx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mc_w.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mc_w_mmx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mmx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\avs\libavs\xavs_globe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\IntelCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\IntelES2YUV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\avc_bitstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\avc_nal_spl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\avc_spl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\base_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\d3d11_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\d3d11_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\d3d_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\d3d_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\general_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\mfx_buffering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\plugin_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\sample_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\sysmem_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vaapi_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vaapi_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vaapi_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vaapi_utils_android.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vaapi_utils_drm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vaapi_utils_x11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vpp_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\patch\golomb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\patch\stdafx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\patch\vuipatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vm\atomic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vm\atomic_linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vm\shared_object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vm\shared_object_linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vm\thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vm\thread_linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vm\thread_windows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vm\time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\intel\common\src\vm\time_linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio\AudioCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\AudioES2PCM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\AudioPCM2ES.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\DraES2PCM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\libdra\xdra_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\libdra\xdra_fft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\libdra\xdra_freq_band.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\libdra\xdra_huffman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\libdra\xdra_mdct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\libdra\xdra_qstep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\libdra\xdra_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\libdra\xdra_win_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\dra\libdra\xdra_huffman_table.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\ffmpeg\FFMPEGES2PCM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="channel\Channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="channel\ChannelManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="channel\ChannelStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config\SysConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="monitor\alg_blackframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="monitor\alg_colorbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="monitor\alg_snd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="monitor\Monitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="osd\OSDCompositionStr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\BHXml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\FileEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\IntType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\Markup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\NetcardInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\OSMutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\OSSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\OSTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\RingBuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\RingBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\Semaphore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\SharedMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\Thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\UdpX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\ZThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\http\HttpStation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\http\XMLParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stream\StreamReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stream\StreamWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stream\UDPRecv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stream\UDPSend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ts\AVCDemuxer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ts\bs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ts\EncoderTS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ts\ESParse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ts\TSParseCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ts\ts_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\VideoES2YUV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\VideoYUV2ES.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\AVSES2YUV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\ccpuid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\DisplaySurface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_dsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_dsp_mmx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_globe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_decoder_aec_decode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_decoder_aec_read.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_decoder_b_special.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_decoder_b_special0.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_decoder_b_special1.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_decoder_b_special2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\xavs_decoder_common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_idct_mmx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_intra_pred_mmx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_loop_filter_mmx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_mc_chroma_mmx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_mc_luma_0_mmx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_mc_luma_mmx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_idct_sse2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_intra_pred_sse2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_mc_chroma_sse2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_mc_luma_0_sse2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_mc_luma_sse2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\IntelCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\IntelES2YUV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\abstract_splitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\avc_bitstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\avc_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\avc_nal_spl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\avc_spl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\avc_structures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\base_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\current_date.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\d3d11_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\d3d11_device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\d3d_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\d3d_device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\general_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\hw_device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\intrusive_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\mfx_buffering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\mfx_plugin_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\mfx_plugin_module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\mfx_samples_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\plugin_loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\plugin_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\sample_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\sample_params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\sample_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\sample_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\shared_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\surface_auto_lock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\sysmem_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vaapi_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vaapi_device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vaapi_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vaapi_utils_android.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vaapi_utils_drm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vaapi_utils_x11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vpp_ex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\patch\get_bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\patch\golomb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\patch\put_bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\patch\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\patch\vuipatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vm\atomic_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vm\file_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vm\so_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vm\strings_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vm\thread_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\intel\common\include\vm\time_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

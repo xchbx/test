@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3CC1146-F2F4-47FD-A2B6-2F1A87D5AEE5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="audio\AudioPCM2ES.cpp" />
+    <ClCompile Include="audio\dra\DraES2PCM.cpp" />
+    <ClCompile Include="audio\dra\libdra\xdra_decoder.cpp" />
+    <ClCompile Include="audio\dra\libdra\xdra_fft.cpp" />
+    <ClCompile Include="audio\dra\libdra\xdra_freq_band.cpp" />
+    <ClCompile Include="audio\dra\libdra\xdra_huffman.cpp" />
+    <ClCompile Include="audio\dra\libdra\xdra_mdct.cpp" />
+    <ClCompile Include="audio\dra\libdra\xdra_qstep.cpp" />
+    <ClCompile Include="audio\dra\libdra\xdra_util.cpp" />
+    <ClCompile Include="audio\dra\libdra\xdra_win_tables.cpp" />
+    <ClCompile Include="audio\ffmpeg\FFMPEGES2PCM.cpp" />
+    <ClCompile Include="channel\Channel.cpp" />
+    <ClCompile Include="channel\ChannelManager.cpp" />
+    <ClCompile Include="channel\ChannelStruct.cpp" />
+    <ClCompile Include="config\SysConfig.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="monitor\alg_blackframe.cpp" />
+    <ClCompile Include="monitor\alg_colorbar.cpp" />
+    <ClCompile Include="monitor\alg_snd.cpp" />
+    <ClCompile Include="monitor\Monitor.cpp" />
+    <ClCompile Include="osd\OSDCompositionStr.cpp" />
+    <ClCompile Include="platform\PlatformInterface.cpp" />
+    <ClCompile Include="public\BHXml.cpp" />
+    <ClCompile Include="public\FileEx.cpp" />
+    <ClCompile Include="public\http\HttpStation.cpp" />
+    <ClCompile Include="public\http\XMLParser.cpp" />
+    <ClCompile Include="public\Markup.cpp" />
+    <ClCompile Include="public\NetcardInfo.cpp" />
+    <ClCompile Include="public\OSMutex_Linux.cpp" />
+    <ClCompile Include="public\OSMutex_Win32.cpp" />
+    <ClCompile Include="public\OSSocket.cpp" />
+    <ClCompile Include="public\OSTime.cpp" />
+    <ClCompile Include="public\RingBuf.cpp" />
+    <ClCompile Include="public\Semaphore_Linux.cpp" />
+    <ClCompile Include="public\Semaphore_Win32.cpp" />
+    <ClCompile Include="public\SharedMemory_Linux.cpp" />
+    <ClCompile Include="public\SharedMemory_Win32.cpp" />
+    <ClCompile Include="public\Thread_Linux.cpp" />
+    <ClCompile Include="public\Thread_Win32.cpp" />
+    <ClCompile Include="public\UdpX.cpp" />
+    <ClCompile Include="public\ZThread.cpp" />
+    <ClCompile Include="stream\StreamReader.cpp" />
+    <ClCompile Include="stream\StreamWriter.cpp" />
+    <ClCompile Include="stream\UDPRecv.cpp" />
+    <ClCompile Include="stream\UDPSend.cpp" />
+    <ClCompile Include="ts\AVCDemuxer.cpp" />
+    <ClCompile Include="ts\EncoderTS.cpp" />
+    <ClCompile Include="ts\ESParse.cpp" />
+    <ClCompile Include="ts\TSParseCommon.cpp" />
+    <ClCompile Include="video\avs\AVSES2YUV.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_decoder.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_decoder_aec.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_decoder_vlc.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_dsp.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mc.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mc_mmx.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mc_w.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mc_w_mmx.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_dsp_mmx.cpp" />
+    <ClCompile Include="video\avs\libavs\xavs_globe.cpp" />
+    <ClCompile Include="video\intel\common\src\avc_bitstream.cpp" />
+    <ClCompile Include="video\intel\common\src\avc_nal_spl.cpp" />
+    <ClCompile Include="video\intel\common\src\avc_spl.cpp" />
+    <ClCompile Include="video\intel\common\src\base_allocator.cpp" />
+    <ClCompile Include="video\intel\common\src\d3d11_allocator.cpp" />
+    <ClCompile Include="video\intel\common\src\d3d11_device.cpp" />
+    <ClCompile Include="video\intel\common\src\d3d_allocator.cpp" />
+    <ClCompile Include="video\intel\common\src\d3d_device.cpp" />
+    <ClCompile Include="video\intel\common\src\general_allocator.cpp" />
+    <ClCompile Include="video\intel\common\src\mfx_buffering.cpp" />
+    <ClCompile Include="video\intel\common\src\patch\golomb.c" />
+    <ClCompile Include="video\intel\common\src\patch\stdafx.c" />
+    <ClCompile Include="video\intel\common\src\patch\vuipatch.c" />
+    <ClCompile Include="video\intel\common\src\plugin_utils.cpp" />
+    <ClCompile Include="video\intel\common\src\sample_utils.cpp" />
+    <ClCompile Include="video\intel\common\src\sysmem_allocator.cpp" />
+    <ClCompile Include="video\intel\common\src\vaapi_allocator.cpp" />
+    <ClCompile Include="video\intel\common\src\vaapi_device.cpp" />
+    <ClCompile Include="video\intel\common\src\vaapi_utils.cpp" />
+    <ClCompile Include="video\intel\common\src\vaapi_utils_android.cpp" />
+    <ClCompile Include="video\intel\common\src\vaapi_utils_drm.cpp" />
+    <ClCompile Include="video\intel\common\src\vaapi_utils_x11.cpp" />
+    <ClCompile Include="video\intel\common\src\vm\atomic.cpp" />
+    <ClCompile Include="video\intel\common\src\vm\atomic_linux.cpp" />
+    <ClCompile Include="video\intel\common\src\vm\shared_object.cpp" />
+    <ClCompile Include="video\intel\common\src\vm\shared_object_linux.cpp" />
+    <ClCompile Include="video\intel\common\src\vm\thread.cpp" />
+    <ClCompile Include="video\intel\common\src\vm\thread_linux.cpp" />
+    <ClCompile Include="video\intel\common\src\vm\thread_windows.cpp" />
+    <ClCompile Include="video\intel\common\src\vm\time.cpp" />
+    <ClCompile Include="video\intel\common\src\vm\time_linux.cpp" />
+    <ClCompile Include="video\intel\common\src\vpp_ex.cpp" />
+    <ClCompile Include="video\intel\IntelCommon.cpp" />
+    <ClCompile Include="video\intel\IntelES2YUV.cpp" />
+    <ClCompile Include="video\VideoYUV2ES.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio\AudioCommon.h" />
+    <ClInclude Include="audio\AudioES2PCM.h" />
+    <ClInclude Include="audio\AudioPCM2ES.h" />
+    <ClInclude Include="audio\dra\DraES2PCM.h" />
+    <ClInclude Include="audio\dra\libdra\xdra_decoder.h" />
+    <ClInclude Include="audio\dra\libdra\xdra_fft.h" />
+    <ClInclude Include="audio\dra\libdra\xdra_freq_band.h" />
+    <ClInclude Include="audio\dra\libdra\xdra_huffman.h" />
+    <ClInclude Include="audio\dra\libdra\xdra_huffman_table.hpp" />
+    <ClInclude Include="audio\dra\libdra\xdra_mdct.h" />
+    <ClInclude Include="audio\dra\libdra\xdra_qstep.h" />
+    <ClInclude Include="audio\dra\libdra\xdra_util.h" />
+    <ClInclude Include="audio\dra\libdra\xdra_win_tables.h" />
+    <ClInclude Include="audio\ffmpeg\FFMPEGES2PCM.h" />
+    <ClInclude Include="channel\Channel.h" />
+    <ClInclude Include="channel\ChannelManager.h" />
+    <ClInclude Include="channel\ChannelStruct.h" />
+    <ClInclude Include="common\Common.h" />
+    <ClInclude Include="config\SysConfig.h" />
+    <ClInclude Include="monitor\alg_blackframe.h" />
+    <ClInclude Include="monitor\alg_colorbar.h" />
+    <ClInclude Include="monitor\alg_snd.h" />
+    <ClInclude Include="monitor\Monitor.h" />
+    <ClInclude Include="osd\OSDCompositionStr.h" />
+    <ClInclude Include="platform\PlatformInterface.h" />
+    <ClInclude Include="public\BHXml.h" />
+    <ClInclude Include="public\FileEx.h" />
+    <ClInclude Include="public\http\HttpStation.h" />
+    <ClInclude Include="public\http\XMLParser.h" />
+    <ClInclude Include="public\IntType.h" />
+    <ClInclude Include="public\Markup.h" />
+    <ClInclude Include="public\NetcardInfo.h" />
+    <ClInclude Include="public\OSMutex.h" />
+    <ClInclude Include="public\OSSocket.h" />
+    <ClInclude Include="public\OSTime.h" />
+    <ClInclude Include="public\RingBuf.h" />
+    <ClInclude Include="public\RingBuffer.h" />
+    <ClInclude Include="public\Semaphore.h" />
+    <ClInclude Include="public\SharedMemory.h" />
+    <ClInclude Include="public\Thread.h" />
+    <ClInclude Include="public\UdpX.h" />
+    <ClInclude Include="public\ZThread.h" />
+    <ClInclude Include="stream\StreamReader.h" />
+    <ClInclude Include="stream\StreamWriter.h" />
+    <ClInclude Include="stream\UDPRecv.h" />
+    <ClInclude Include="stream\UDPSend.h" />
+    <ClInclude Include="ts\AVCDemuxer.h" />
+    <ClInclude Include="ts\bs.h" />
+    <ClInclude Include="ts\EncoderTS.h" />
+    <ClInclude Include="ts\ESParse.h" />
+    <ClInclude Include="ts\TSParseCommon.h" />
+    <ClInclude Include="ts\ts_table.h" />
+    <ClInclude Include="video\avs\AVSES2YUV.h" />
+    <ClInclude Include="video\avs\libavs\ccpuid.h" />
+    <ClInclude Include="video\avs\libavs\DisplaySurface.h" />
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_idct_mmx.hpp" />
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_intra_pred_mmx.hpp" />
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_loop_filter_mmx.hpp" />
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_mc_chroma_mmx.hpp" />
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_mc_luma_0_mmx.hpp" />
+    <ClInclude Include="video\avs\libavs\mmx\xavs_dsp_mc_luma_mmx.hpp" />
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_idct_sse2.hpp" />
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_intra_pred_sse2.hpp" />
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_mc_chroma_sse2.hpp" />
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_mc_luma_0_sse2.hpp" />
+    <ClInclude Include="video\avs\libavs\sse2\xavs_dsp_mc_luma_sse2.hpp" />
+    <ClInclude Include="video\avs\libavs\xavs.h" />
+    <ClInclude Include="video\avs\libavs\xavs_decoder.h" />
+    <ClInclude Include="video\avs\libavs\xavs_decoder_aec_decode.hpp" />
+    <ClInclude Include="video\avs\libavs\xavs_decoder_aec_read.hpp" />
+    <ClInclude Include="video\avs\libavs\xavs_decoder_b_special.hpp" />
+    <ClInclude Include="video\avs\libavs\xavs_decoder_b_special0.hpp" />
+    <ClInclude Include="video\avs\libavs\xavs_decoder_b_special1.hpp" />
+    <ClInclude Include="video\avs\libavs\xavs_decoder_b_special2.hpp" />
+    <ClInclude Include="video\avs\libavs\xavs_decoder_common.hpp" />
+    <ClInclude Include="video\avs\libavs\xavs_dsp.h" />
+    <ClInclude Include="video\avs\libavs\xavs_dsp_mmx.h" />
+    <ClInclude Include="video\avs\libavs\xavs_globe.h" />
+    <ClInclude Include="video\intel\common\include\abstract_splitter.h" />
+    <ClInclude Include="video\intel\common\include\avc_bitstream.h" />
+    <ClInclude Include="video\intel\common\include\avc_headers.h" />
+    <ClInclude Include="video\intel\common\include\avc_nal_spl.h" />
+    <ClInclude Include="video\intel\common\include\avc_spl.h" />
+    <ClInclude Include="video\intel\common\include\avc_structures.h" />
+    <ClInclude Include="video\intel\common\include\base_allocator.h" />
+    <ClInclude Include="video\intel\common\include\current_date.h" />
+    <ClInclude Include="video\intel\common\include\d3d11_allocator.h" />
+    <ClInclude Include="video\intel\common\include\d3d11_device.h" />
+    <ClInclude Include="video\intel\common\include\d3d_allocator.h" />
+    <ClInclude Include="video\intel\common\include\d3d_device.h" />
+    <ClInclude Include="video\intel\common\include\general_allocator.h" />
+    <ClInclude Include="video\intel\common\include\hw_device.h" />
+    <ClInclude Include="video\intel\common\include\intrusive_ptr.h" />
+    <ClInclude Include="video\intel\common\include\mfx_buffering.h" />
+    <ClInclude Include="video\intel\common\include\mfx_plugin_base.h" />
+    <ClInclude Include="video\intel\common\include\mfx_plugin_module.h" />
+    <ClInclude Include="video\intel\common\include\mfx_samples_config.h" />
+    <ClInclude Include="video\intel\common\include\patch\get_bits.h" />
+    <ClInclude Include="video\intel\common\include\patch\golomb.h" />
+    <ClInclude Include="video\intel\common\include\patch\put_bits.h" />
+    <ClInclude Include="video\intel\common\include\patch\stdafx.h" />
+    <ClInclude Include="video\intel\common\include\patch\vuipatch.h" />
+    <ClInclude Include="video\intel\common\include\plugin_loader.h" />
+    <ClInclude Include="video\intel\common\include\plugin_utils.h" />
+    <ClInclude Include="video\intel\common\include\sample_defs.h" />
+    <ClInclude Include="video\intel\common\include\sample_params.h" />
+    <ClInclude Include="video\intel\common\include\sample_types.h" />
+    <ClInclude Include="video\intel\common\include\sample_utils.h" />
+    <ClInclude Include="video\intel\common\include\shared_ptr.h" />
+    <ClInclude Include="video\intel\common\include\surface_auto_lock.h" />
+    <ClInclude Include="video\intel\common\include\sysmem_allocator.h" />
+    <ClInclude Include="video\intel\common\include\vaapi_allocator.h" />
+    <ClInclude Include="video\intel\common\include\vaapi_device.h" />
+    <ClInclude Include="video\intel\common\include\vaapi_utils.h" />
+    <ClInclude Include="video\intel\common\include\vaapi_utils_android.h" />
+    <ClInclude Include="video\intel\common\include\vaapi_utils_drm.h" />
+    <ClInclude Include="video\intel\common\include\vaapi_utils_x11.h" />
+    <ClInclude Include="video\intel\common\include\vm\atomic_defs.h" />
+    <ClInclude Include="video\intel\common\include\vm\file_defs.h" />
+    <ClInclude Include="video\intel\common\include\vm\so_defs.h" />
+    <ClInclude Include="video\intel\common\include\vm\strings_defs.h" />
+    <ClInclude Include="video\intel\common\include\vm\thread_defs.h" />
+    <ClInclude Include="video\intel\common\include\vm\time_defs.h" />
+    <ClInclude Include="video\intel\common\include\vpp_ex.h" />
+    <ClInclude Include="video\intel\IntelCommon.h" />
+    <ClInclude Include="video\intel\IntelES2YUV.h" />
+    <ClInclude Include="video\VideoES2YUV.h" />
+    <ClInclude Include="video\VideoYUV2ES.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
